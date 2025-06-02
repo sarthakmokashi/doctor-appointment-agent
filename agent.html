@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Doctor Appointment Agent</title>
+    <script src="https://orgfarm-7a06bbde50-dev-ed.develop.lightning.force.com/lightning/lightning.out.js"></script>
+  </head>
+  <body>
+    <h2>Doctor's Appointment Assistant</h2>
+    <div id="app_container"></div>
+
+    <script>
+      $Lightning.use(
+        "c:DoctorAppointmentApp", // your Lightning App name
+        function () {
+          $Lightning.createComponent(
+            "c:LWCWrapperForLightningOut", // Aura wrapper of LWC
+            {},
+            "app_container",
+            function (cmp) {
+              console.log("Doctor Appointment Management Agent loaded!");
+            }
+          );
+        },
+        "https://orgfarm-7a06bbde50-dev-ed.develop.lightning.force.com" // replace with your Salesforce domain
+      );
+    </script>
+  </body>
+</html>
