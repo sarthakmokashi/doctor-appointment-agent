@@ -3,78 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gemini Theme Gradient Background</title>
-    <style>
-        body {
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #4796E3, #9177C7, #CA6673); /* Gemini color gradient */
-            font-family: sans-serif;
-            color: white;
-        }
-        .container {
-            text-align: center;
-        }
-    </style>
-</head>
+    <title>Beautiful Multi-Color Gradient</title>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
-    <div class="container">
-        <h1>Gemini-Themed Page</h1>
-        <p>This page features a gradient background inspired by Gemini's color scheme.</p>
+    <div class="logo-container">
+        <img src="images/AgentforceLogo.png" alt="Agentforce Logo">
     </div>
+
+    <div class="two-part-content-wrapper">
+        <div class="part-one">
+            <div class="container"  data-tilt data-tilt-glare>
+                <h1>Doctor's Appointment Management Agent</h1>
+                <p>Note - Below is the table of Instructions for performing different 
+                    actions that the Agent is designed to perform.</p>
+            </div>
+        </div>
+        <div class="part-two">
+            <p style="text-align: center; color: rgba(255, 255, 255, 0.7); margin-top: 50px;">
+                This is the 40% section below the logo. You can add more content here.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Doctor Appointment Agent</title>
-    <script src="https://orgfarm-7a06bbde50-dev-ed.develop.lightning.force.com/lightning/lightning.out.js"></script>
-  </head>
-  <body>
-    <h2>Doctor's Appointment Assistant</h2>
-    <div id="app_container"></div>
-
-    <script>
-      $Lightning.use(
-        "c:DoctorAppointmentApp", // your Lightning App name
-        function () {
-          $Lightning.createComponent(
-            "c:LWCWrapperForLightningOut", // Aura wrapper of LWC
-            {},
-            "app_container",
-            function (cmp) {
-              console.log("Doctor Appointment Management Agent loaded!");
-            }
-          );
-        },
-        "https://orgfarm-7a06bbde50-dev-ed.develop.lightning.force.com" // replace with your Salesforce domain
-      );
-    </script>
-  </body>
-</html>
- -->
