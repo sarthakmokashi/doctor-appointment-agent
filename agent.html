@@ -22,6 +22,25 @@
             <p style="text-align: center; color: rgba(255, 255, 255, 0.7); margin-top: 50px;">
                 This is the 40% section below the logo. You can add more content here.
             </p>
+            <script type='text/javascript'>
+                function initEmbeddedMessaging() {
+                    try {
+                        embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
+            
+                        embeddedservice_bootstrap.init(
+                            '00DgK000000k1HG',
+                            'MIAW_Agentforce',
+                            'https://orgfarm-7a06bbde50-dev-ed.develop.my.site.com/ESWMIAWAgentforce1748952649744',
+                            {
+                                scrt2URL: 'https://orgfarm-7a06bbde50-dev-ed.develop.my.salesforce-scrt.com'
+                            }
+                        );
+                    } catch (err) {
+                        console.error('Error loading Embedded Messaging: ', err);
+                    }
+                };
+            </script>
+            <script type='text/javascript' src='https://orgfarm-7a06bbde50-dev-ed.develop.my.site.com/ESWMIAWAgentforce1748952649744/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
         </div>
     </div>
 
